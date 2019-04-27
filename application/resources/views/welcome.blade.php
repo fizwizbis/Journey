@@ -81,7 +81,6 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
                 </div>
 
                 <div class="links">
@@ -95,5 +94,6 @@
                 </div>
             </div>
         </div>
+            <a class="button is-success">Success</a>
     </body>
 </html>

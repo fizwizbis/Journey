@@ -19,6 +19,10 @@ RUN apt-get update && apt-get install -y \
     git \
     curl
 
+RUN curl --silent --location https://deb.nodesource.com/setup_10.x | bash -
+RUN apt-get install --yes nodejs npm
+RUN apt-get install --yes build-essential
+
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN docker-php-ext-install pdo_mysql mbstring zip exif pcntl
